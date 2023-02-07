@@ -12,18 +12,21 @@
 </head>
 
 <body>
-    <header> <!--Закрепленный хедер-->
-      <div class="header_links">
-        <div class="logo">
-          <a class="logo_text" href="index.html">dara_ar</a>
+  <div class="body_wrapper">
+    <div class="header">
+      <header> <!--Закрепленный хедер-->
+        <div class="header_links">
+          <div class="logo">
+            <a class="logo_text" href="index.html">dara_ar</a>
+          </div>
+          <div class="header_buttons">
+            <a class="header_b" href="#portfolio">портфолио</a>
+            <a class="header_b" href="#about_me">обо мне</a>
+            <a class="header_b" href="#contacts">связь</a>
+          </div>
         </div>
-        <div class="header_buttons">
-          <a class="header_b" href="portfolio">портфолио</a>
-          <a class="header_b" href="about_me">обо мне</a>
-          <a class="header_b" href="contacts">связь</a>
-        </div>
-      </div>
-    </header> 
+      </header> 
+    </div>
 
     <main> <!--Основная часть, скролл-->
       <div class="main_wrapper">
@@ -31,15 +34,40 @@
           меня зовут Дарья<br>
           и я дизайнер</h2>
         <div class="portfolio_wrapper">
-          <h2>мое портфолио 💯</h2>
+          <h2 id="portfolio">мое портфолио💯</h2>
+          <div class="categories">
+            <div class="choose_category">
+              <span>выбери категорию</span>
+              <img class="arrow" src="./src/icons/arrow.png" alt="arrow">
+            </div>
+            <div class="categories_wrapper">
+              <a href="./grafic-design/grafic-design.html">
+                <div class="pallet gd">
+                  <span>Графический дизайн</span>
+                </div>
+              </a>
+              <a href="./web-design/web-design.html">
+                <div class="pallet wd">
+                  <span>Веб-дизайн</span>
+                </div>
+              </a>
+              <a href="./illustrations/illustrations.html">
+                <div class="pallet il">
+                  <span>Иллюстрации</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="about_me_wrapper">
-          <h2>обо мне 😻</h2>
+          <h2 id="about_me">обо мне 😻</h2>
         </div>
-        <div class="contacts_wrapper"></div>
+        <div class="contacts_wrapper" id="contacts"></div>
       </div>
     </main>
 
+  </div>
+  
 </body>
 
 </html>
