@@ -1,0 +1,9 @@
+:root{
+    --h-margin: 150px;
+    --p-margin: 100px;
+}
+
+html{
+    background-color: rgba(255, 246, 250, 1);
+    height: 100%;
+}

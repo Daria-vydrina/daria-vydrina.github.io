@@ -1,0 +1,56 @@
+:root {
+    --h-margin: 150px;
+    --p-margin: 100px;
+}
+
+@font-face {
+    font-family: "Rostov";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Rostov"), /* Если не получилось, загрузит woff2 */
+    url("./fonts/rostov.woff2") format("woff2"), /* Если браузер не поддерживает woff2, загрузит woff */
+    url("./fonts/rostov.woff") format("woff");
+}
+
+body {
+    font-family: "Rostov";
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 1440px;
+    position: fixed;
+    width: 100%;
+}
+
+header>div {
+    margin: 50px 100px;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+
+a {
+    font-family: 'Rostov';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.header_buttons>a {
+    margin-right: 50px;
+}
+
+.header_buttons>a:last-child {
+    margin-right: 0;
+}
+
+main {
+    height: 2000px;
+}
