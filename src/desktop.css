@@ -16,7 +16,7 @@
     url("./fonts/rostov.woff") format("woff");
 }
 
-html{
+html {
     background-color: rgba(255, 246, 250, 1);
     height: 100%;
 }
@@ -28,6 +28,16 @@ body {
     margin: 0 auto;
 }
 
+.body_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: auto;
+    height: 100%;
+}
+
 header {
     max-width: 1440px;
     /* position: fixed; */
@@ -36,11 +46,12 @@ header {
 }
 
 header>div {
-    margin: var(--header-margin-tb) var(--header-margin-lr) 0;
+    margin: var(--header-margin-tb) var(--header-margin-lr);
     display: flex;
     width: auto;
     justify-content: space-between;
     padding-bottom: var(--header-margin-tb);
+    padding-top: calc(- var(--header-margin-tb))
 }
 
 a {
@@ -76,4 +87,35 @@ h2 {
     font-size: 96px;
     line-height: 96px;
     margin: var(--h-margin) 0;
+}
+
+span {
+    font-family: 'Rostov';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.choose_category {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: var(--p-margin);
+}
+
+.arrow {
+    margin-left: 10px;
+    width: var(--header-font-size);
+    height: var(--header-font-size);
+}
+
+.pallet {
+    width: 365px;
+    height: 530px;
+    outline: 1px solid black;
+}
+
+.categories_wrapper{
+    display: flex;
+    justify-content: space-between;
 }
